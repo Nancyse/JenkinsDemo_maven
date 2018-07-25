@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
+
+  <listeners>
+	<listener class-name="org.uncommons.reportng.HTMLReporter"/>
+	<listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <usedefaultlisteners name="false" />
+  
   <test name="Test">
     <classes>
       <class name="JenkinsTest.jenkinsDemo.FirstTest"/>
     </classes>
+    
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->
+
+
